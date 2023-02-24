@@ -29,7 +29,7 @@ public class PlayAnMP3 extends Application {
   public void start(Stage stage) throws Exception {
     BorderPane pane = new BorderPane();
     // I, Rick Mercer, changed the song to be played before pushing to GitHub
-    String path = "songfiles/SwingCheese.mp3";
+    String path = "songfiles/DanseMacabreViolinHook.mp3";
     playASong(path);
     // And swapped two lines
     pane.setCenter( new Label(path));
