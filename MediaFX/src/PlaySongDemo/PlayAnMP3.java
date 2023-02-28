@@ -47,11 +47,13 @@ public class PlayAnMP3 extends Application {
     File file = new File(path);
     URI uri = file.toURI();
     System.out.println(uri);
-    // Play one mp3 and and have code run when the song ends
+    // Play one mp3 
     Media media = new Media(uri.toString());
     MediaPlayer mediaPlayer = new MediaPlayer(media);
     mediaPlayer.play();
-      
+     
+    // Use a Runnable argument that executes its run method
+    // when the mediaPlayer detects the end of the song
     mediaPlayer.setOnEndOfMedia(new Waiter());
     System.out.println("You may need to shut this App down");
  
