@@ -21,8 +21,8 @@ public class CashRegisterGUI extends Application {
     Application.launch(args);
   }
 
-  private TextField quantityField = new TextField();
-  private TextField priceField;
+  TextField quantityField = new TextField();
+  TextField priceField;
   private Button addItemButton;
   private ListView<String> listView;
   ObservableList<String> observableList = FXCollections.observableArrayList();
