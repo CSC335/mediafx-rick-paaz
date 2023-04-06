@@ -55,8 +55,7 @@ public class PlayAnMP3 extends Application {
     // Use a Runnable argument that executes its run method
     // when the mediaPlayer detects the end of the song
     mediaPlayer.setOnEndOfMedia(new Waiter());
-    System.out.println("You may need to shut this App down");
- 
+  
     }
   
   private class Waiter implements Runnable {

@@ -54,6 +54,12 @@ public class PlayList {
     @Override
     public void run() {
       q.remove();
+      try {
+        Thread.sleep(2000); // 2 seconds
+   } catch (InterruptedException e) {
+     e.printStackTrace();
+   }
+
       playSongIfThereIsOneToPlay();
     }
   }
