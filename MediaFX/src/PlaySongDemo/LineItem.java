@@ -2,20 +2,20 @@ package PlaySongDemo;
 
 public class LineItem {
 
-  // Adding a comment
-   int howMany;
-   double howMuch;
+  // Add another comment
+  private int howMany;
+  private double howMuch;
 
   public LineItem(int quantity, double price) {
-    howMuch = price;
     howMany = quantity;
-    }
+    howMuch = price;
+  }
 
   double lineItemTotal() {
     return Math.round(100 * howMany * howMuch) / 100.0;
   }
 
   public String toString() {
-    return howMany + "@" + howMuch + " = " + lineItemTotal();
+    return howMany + "@" + howMuch + " = $" + lineItemTotal();
   }
 }
