@@ -16,6 +16,7 @@ import javafx.stage.Stage;
 
 public class CashRegisterGUI extends Application {
 
+  // Adding a comment
   public static void main(String[] args) {
     Application.launch(args);
   }
@@ -28,8 +29,6 @@ public class CashRegisterGUI extends Application {
 
   @Override
   public void start(Stage primaryStage) {
-    
-    
     // Instantiate the components of the top pane
     Label quantityLabel = new Label("  Quantity");
     quantityField = new TextField();
