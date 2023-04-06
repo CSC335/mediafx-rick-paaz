@@ -2,13 +2,14 @@ package PlaySongDemo;
 
 public class LineItem {
 
-  private int howMany;
-  private double howMuch;
+  // Adding a comment
+   int howMany;
+   double howMuch;
 
   public LineItem(int quantity, double price) {
-    howMany = quantity;
     howMuch = price;
-  }
+    howMany = quantity;
+    }
 
   double lineItemTotal() {
     return Math.round(100 * howMany * howMuch) / 100.0;
@@ -18,4 +19,3 @@ public class LineItem {
     return howMany + "@" + howMuch + " = " + lineItemTotal();
   }
 }
-
