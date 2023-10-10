@@ -1,6 +1,7 @@
 # Songs
 *.mp3
 .project
+.classpath
 
 # Compiled class file
 *.class
