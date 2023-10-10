@@ -1,5 +1,6 @@
 # Songs
 *.mp3
+.project
 
 # Compiled class file
 *.class
